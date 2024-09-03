@@ -41,7 +41,9 @@ Includes content (verbatim) from another file (the contents will not be parsed).
 Render a list of items.
 
 ```html
-<for items="list" item="item" index="i" />
+<for items="people" item="person" index="i" />
+  <li>@person.name</li>
+</for>
 ```
 
 ### If

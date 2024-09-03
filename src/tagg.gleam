@@ -13,6 +13,8 @@ import tagg_error.{type TaggError}
 import tags/component_tag
 import tags/for_loop_component
 import tags/include_tag
+import tags/if_tag
+import tags/ifn_tag
 
 /// Gets the custom tags that this library includes by default, along with
 /// their corresponding transformation functions (the functions that allow the
@@ -22,6 +24,8 @@ fn get_default_tag_config() -> TagConfig {
     #("component", component_tag.create_sections),
     #("for", for_loop_component.create_sections),
     #("include", include_tag.create_sections),
+    #("if", if_tag.create_sections),
+    #("ifn", ifn_tag.create_sections),
   ])
 }
 

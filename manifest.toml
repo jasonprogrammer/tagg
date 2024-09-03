@@ -2,7 +2,7 @@
 # You typically do not need to edit this file
 
 packages = [
-  { name = "cx", version = "1.0.4", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "cx", source = "hex", outer_checksum = "1E58DE1A1BF01CF520093158D8C6A3C3F918C1EC426FCFE8BCDC1D69361BFC4B" },
+  { name = "cx", version = "1.0.5", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "cx", source = "hex", outer_checksum = "75B09F49A7DC714E1A6B8918D8CC658E5CE3D2DA625967E9C11BA7E79B952B99" },
   { name = "filepath", version = "1.0.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "filepath", source = "hex", outer_checksum = "EFB6FF65C98B2A16378ABC3EE2B14124168C0CE5201553DE652E2644DCFDB594" },
   { name = "gleam_json", version = "1.0.1", build_tools = ["gleam"], requirements = ["gleam_stdlib", "thoas"], otp_app = "gleam_json", source = "hex", outer_checksum = "9063D14D25406326C0255BDA0021541E797D8A7A12573D849462CAFED459F6EB" },
   { name = "gleam_stdlib", version = "0.38.0", build_tools = ["gleam"], requirements = [], otp_app = "gleam_stdlib", source = "hex", outer_checksum = "663CF11861179AF415A625307447775C09404E752FF99A24E2057C835319F1BE" },
@@ -13,7 +13,7 @@ packages = [
 ]
 
 [requirements]
-cx = { version = ">= 1.0.4 and < 2.0.0" }
+cx = { version = ">= 1.0.5 and < 2.0.0" }
 filepath = { version = ">= 1.0.0 and < 2.0.0" }
 gleam_json = { version = "~> 1.0" }
 gleam_stdlib = { version = "~> 0.38.0" }

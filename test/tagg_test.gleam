@@ -276,6 +276,19 @@ pub fn page3_include_component_test() {
   html_compare(file_prefix, dict.new(), cx.dict(), False)
 }
 
+/// Test that the templating engine can process a document containing a
+/// <component> that includes and parses another document.
+pub fn page4_if_components_test() {
+  let file_prefix = "page4"
+
+  let context =
+    cx.dict()
+    |> cx.add_bool("should_show_users", True)
+    |> cx.add_bool("should_hide_footer", False)
+
+  html_compare(file_prefix, dict.new(), context, True)
+}
+
 /// This helps write the "expected" files that are used for regression
 /// testing. This is intended to be manually set locally, when we need to
 /// generate new files.

@@ -21,7 +21,7 @@ Here is a usage summary of the supported tags:
 - `<include path="/path/to/script.js" />`
 - `<for items="list" item="item" index="i" />`
 - `<if name="is_admin" />`
-- `<ifn name="is_admin" />`
+- `<ifn name="is_admin" />` (if not)
 
 ## Example
 

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My test page</title>
+  </head>
+  <body>
+    <table1 items="people"></table1>
+    <table1 items="people" />
+    <div class="@settings.className">@company_address1</div>
+    <for items="people" item="person" index="i">
+      <for items="person.Nicknames" item="nickname" index="j">
+        <div>@i @j @nickname</div>
+      </for>
+    </for>
+  </body>
+</html>

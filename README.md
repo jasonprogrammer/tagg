@@ -25,6 +25,8 @@ Here is a usage summary of the supported tags:
 
 ## Example
 
+See the [example Wisp app](https://github.com/jasonprogrammer/tagg_wisp_example) that uses Tagg.
+
 ### router.gleam
 
 ```gleam

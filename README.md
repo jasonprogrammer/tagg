@@ -10,6 +10,7 @@ Goals of the project include:
   - Familiar HTML tag syntax that editors can already highlight and format
   - Write custom, reusable components (e.g. the `<component />` tag)
   - Include scripts (e.g. the `<include />` tag)
+  - Use Gleam code alonside templates, to customize rendering
 
 **Note**: This library is still being written!
 
@@ -52,6 +53,8 @@ Render an item if a condition is true.
 
 ```html
 <if name="is_admin" />
+  <h2>Users</h2>
+</if>
 ```
 
 ### Ifn
@@ -59,7 +62,9 @@ Render an item if a condition is true.
 Render an item if a condition is false.
 
 ```html
-<ifn name="is_admin" />
+<ifn name="is_dark_mode" />
+  <div>This is bright.</div>
+</ifn>
 ```
 
 ## Example

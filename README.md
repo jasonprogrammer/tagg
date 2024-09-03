@@ -74,7 +74,7 @@ fn events_page(req: Request, web_context: Context) -> Response {
 
 ### Output
 
-The output HTML (the templating engine does not compress the whitespace) is:
+The output HTML (whitespace is preserved) is:
 
 ```html
 <!doctype html>

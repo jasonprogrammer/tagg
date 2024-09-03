@@ -70,7 +70,7 @@ fn events_page(req: Request, web_context: Context) -> Response {
 
 ### Output
 
-[screenshot of HTML output](./docs/images/tagg-example-html-output.png)
+![screenshot of HTML output](./docs/images/tagg-example-html-output.png)
 
 
 ## Installing

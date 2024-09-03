@@ -49,6 +49,7 @@ This can also be written with a closing tag:
 <script>
   <include path="/path/to/script.js"></include>
 </script>
+```
 
 ### For
 

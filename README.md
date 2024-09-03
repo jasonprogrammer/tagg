@@ -42,7 +42,7 @@ fn events_page(req: Request, web_context: Context) -> Response {
 }
 ```
 
-### page.html
+### events.html
 
 ```html
 <!doctype html>
@@ -50,25 +50,62 @@ fn events_page(req: Request, web_context: Context) -> Response {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Customers</title>
+    <title>Events</title>
   </head>
   <body>
-    <component path="/events.html"/>
+    <component path="/events-component.html"/>
   </body>
 </html>
 ```
 
-### events.html
+### events-component.html
 
 ```html
 <h2>Events</h2>
-<for items="events" item="event" index="i">
-  <div>@event.name</div>
-  <div>@event.location</div>
-</for>
-```
+
+<table border="1">
+  <for items="events" item="event" index="i">
+    <tr>
+      <td>@event.name</td>
+      <td>@event.location</td>
+    </tr>
+  </for>
+</table>```
 
 ### Output
+
+The output HTML (the templating engine does not compress the whitespace) is:
+
+```html
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h2>Events</h2>
+
+<table border="1">
+  
+    <tr>
+      <td>Muse Concert</td>
+      <td>Los Angeles, CA</td>
+    </tr>
+  
+    <tr>
+      <td>The Killers</td>
+      <td>Las Vegas, NV</td>
+    </tr>
+  
+</table>
+
+  </body>
+</html>
+```
+
+The page looks like this:
 
 ![screenshot of HTML output](./docs/images/tagg-example-html-output.png)
 

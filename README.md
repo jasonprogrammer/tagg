@@ -6,7 +6,24 @@
 Tagg is an HTML templating engine written in [Gleam](https://gleam.run/) that
 uses XML/HTML tag syntax to render HTML.
 
+Goals of the project include:
+  - Familiar HTML tag syntax that editors can already highlight and format
+  - Write custom, reusable components (e.g. the `<component />` tag)
+  - Include scripts (e.g. the `<include />` tag)
+
 **Note**: This library is still being written!
+
+## Tags
+
+Here is a list of the supported custom tags, with sample usage:
+
+- `<component path="/path/to/component.html" />`
+- `<include path="/path/to/script.js" />`
+- `<for items="list" item="item" index="i" />`
+
+## TODO
+
+- Add an `<if />` tag
 
 ## Example
 

@@ -27,6 +27,12 @@ file will be passed to this component.
 <component path="/path/to/component.html" />
 ```
 
+This can also be written with a closing tag:
+
+```html
+<component path="/path/to/component.html"></component>
+```
+
 ### Include
 
 Includes content (verbatim) from another file (the contents will not be parsed).
@@ -36,6 +42,13 @@ Includes content (verbatim) from another file (the contents will not be parsed).
   <include path="/path/to/script.js" />
 </script>
 ```
+
+This can also be written with a closing tag:
+
+```html
+<script>
+  <include path="/path/to/script.js"></include>
+</script>
 
 ### For
 

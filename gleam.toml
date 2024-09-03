@@ -5,8 +5,8 @@ version = "1.0.0"
 # your project to the Hex package manager.
 #
 # description = ""
-# licences = ["Apache-2.0"]
-# repository = { type = "github", user = "username", repo = "project" }
+licences = ["MIT"]
+repository = { type = "github", user = "jasonprogrammer", repo = "tagg" }
 # links = [{ title = "Website", href = "https://gleam.run" }]
 #
 # For a full reference of all the available options, you can have a look at

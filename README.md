@@ -15,15 +15,13 @@ Goals of the project include:
 
 ## Tags
 
-Here is a list of the supported custom tags, with sample usage:
+Here is a usage summary of the supported tags:
 
 - `<component path="/path/to/component.html" />`
 - `<include path="/path/to/script.js" />`
 - `<for items="list" item="item" index="i" />`
-
-## TODO
-
-- Add an `<if />` tag
+- `<if name="is_admin" />`
+- `<ifn name="is_admin" />`
 
 ## Example
 

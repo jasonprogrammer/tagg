@@ -42,7 +42,7 @@ Includes content (verbatim) from another file (the contents will not be parsed).
 Render a list of items.
 
 ```html
-<for items="people" item="person" index="i" />
+<for items="people" item="person" index="i">
   <li>@person.name</li>
 </for>
 ```
@@ -52,7 +52,7 @@ Render a list of items.
 Render an item if a condition is true.
 
 ```html
-<if name="is_admin" />
+<if name="is_admin">
   <h2>Users</h2>
 </if>
 ```
@@ -62,7 +62,7 @@ Render an item if a condition is true.
 Render an item if a condition is false.
 
 ```html
-<ifn name="is_dark_mode" />
+<ifn name="is_dark_mode">
   <div>This is bright.</div>
 </ifn>
 ```

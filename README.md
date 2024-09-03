@@ -73,7 +73,7 @@ fn events_page(req: Request, web_context: Context) -> Response {
 </table>
 ```
 
-### The HTML Output
+### Output
 
 The output HTML (whitespace is preserved) is:
 

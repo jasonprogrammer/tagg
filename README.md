@@ -70,9 +70,10 @@ fn events_page(req: Request, web_context: Context) -> Response {
       <td>@event.location</td>
     </tr>
   </for>
-</table>```
+</table>
+```
 
-### Output
+### The HTML Output
 
 The output HTML (whitespace is preserved) is:
 

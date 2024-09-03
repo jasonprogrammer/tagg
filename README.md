@@ -17,11 +17,48 @@ Goals of the project include:
 
 Here is a usage summary of the supported tags:
 
-- `<component path="/path/to/component.html" />`
-- `<include path="/path/to/script.js" />`
-- `<for items="list" item="item" index="i" />`
-- `<if name="is_admin" />`
-- `<ifn name="is_admin" />` (if not)
+### Component
+
+Create a file containing a reusable component. The context set on the parent
+file will be passed to this component.
+
+```html
+<component path="/path/to/component.html" />
+```
+
+### Include
+
+Includes content (verbatim) from another file (the contents will not be parsed).
+
+```html
+<script>
+  <include path="/path/to/script.js" />
+</script>
+```
+
+### For
+
+Render a list of items.
+
+```html
+<for items="list" item="item" index="i" />
+```
+
+### If
+
+Render an item if a condition is true.
+
+```html
+<if name="is_admin" />
+```
+
+### Ifn
+
+Render an item if a condition is false.
+
+```html
+<ifn name="is_admin" />
+```
 
 ## Example
 

@@ -71,14 +71,14 @@ Render an item if a condition is true.
 </if>
 ```
 
-### Ifn
+### Unless
 
 Render an item if a condition is false.
 
 ```html
-<ifn name="is_dark_mode">
+<unless name="is_dark_mode">
   <div>This is bright.</div>
-</ifn>
+</unless>
 ```
 
 ## Example

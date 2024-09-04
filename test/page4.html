@@ -9,14 +9,14 @@
     <if name="should_show_users">
       <h2>Users</h2>
     </if>
-    <ifn name="should_show_users">
+    <unless name="should_show_users">
       <h2>Hidden users</h2>
-    </ifn>
+    </unless>
     <if name="should_hide_footer">
       <h2>Hidden footer</h2>
     </if>
-    <ifn name="should_hide_footer">
+    <unless name="should_hide_footer">
       <h2>Footer</h2>
-    </ifn>
+    </unless>
   </body>
 </html>

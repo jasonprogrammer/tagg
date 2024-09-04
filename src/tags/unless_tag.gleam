@@ -4,14 +4,14 @@ import section.{type Section}
 import tagg_config.{type Sections, type Tagg}
 import tagg_error
 
-/// This adds the <ifn> tag, which is used to conditionally render sections. It
-/// does the opposite of the <if> tag; the 'n' stands for 'not'.
+/// This adds the <unless> tag, which is used to conditionally render sections.
+/// It does the opposite of the <if> tag.
 ///
 /// Usage:
 ///
-/// <ifn name="is_admin">
+/// <unless name="is_admin">
 ///   <h2>Non-admin items</h2>
-/// </ifn>
+/// </unless>
 
 pub fn create_sections(
   _tagg: Tagg,
